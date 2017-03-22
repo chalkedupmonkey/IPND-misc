@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Intro to Programming</title>
+    <link rel="stylesheet" href="notes.css">
+  </head>
+<!-- section break -->
+  <body>
+    <h1 id="title">IPND: Notes So Far</h1>
+    <div class="avatar">
+      <img src="http://i.imgur.com/VxBOYQm.jpg" alt="Life is short.">
+    </div>
+<!-- section break -->
+    <div class="toc">
+      <h2 class="toc-title">Table of Contents</h2>
+        <ol type="I">
+          <li class="toc-lesson"><a href="#lesson-1">The Basics</a></li>
+            <ol>
+              <li><a href="#lesson-1-1">The Web</a></li>
+              <li><a href="#lesson-1-2">HTML for Dummies</a></li>
+              <li><a href="#lesson-1-3">The Cloud</a></li>
+            </ol>
+          <li class="toc-lesson"><a href="#lesson-2">Rectangles</a></li>
+            <ol>
+              <li><a href="#lesson-2-1">HTML, CSS, and DOM</a></li>
+              <li><a href="#lesson-2-2">Spacial Awareness</a></li>
+            </ol>
+          <li class="toc-lesson"><a href="#lesson-3">All CSSed Up and Nowhere to Go</a></li>
+            <ol>
+              <li><a href="#lesson-3-1">CSS and Me</a></li>
+              <li><a href="#lesson-3-2">Inside Outside</a></li>
+            </ol>
+          <li class="toc-lesson"><a href="#misc">The Help</a></li>
+            <ol>
+              <li><a href="#misc-1">Escaping HTML</a></li>
+              <li><a href="#misc-2">Little Comments</a></li>
+              <li><a href="#misc-3">Alien vs Predator</a></li>
+              <li><a href="#misc-4">LMGTFY</a></li>
+            </ol>
+        </ol>
+    </div>
+<!-- section break -->
+    <div id="lesson-1" class="lesson">
+      <h2 class="lesson-title">Lesson 1: The Basics</h2>
+        <div id="lesson-1-1" class="concept">
+          <h3 class="concept-title">El Web</h3>
+          <div class="concept-descr">
+            <p>The web is made up of the following basic parts:</p>
+              <ol type="i">
+                <li class="list">Client</li>
+                <li class="list">Internet</li>
+                <li class="list">Servers</li>
+                <li class="list">HTTP - HyperText Transfer Protocol</li>
+                <li class="list">HTML - HyperText Markup Language</li>
+              </ol>
+            <p>
+              Clients communicate with servers through the internet through the protocol known as HTTP. It is the foundation of data communication for the World Wide Web.<br>
+              The server will then find the HTML document the client has requested, and send it back. A web browser then interprets the HTML document and displays it on screen.
+            </p>
+          </div>
+        </div>
+        <div id="lesson-1-2" class="concept">
+          <h3 class="concept-title">HTML for Dummies</h3>
+          <div class="concept-descr">
+            <p>
+              HTML is made up of elements. An element is usually made up of a <b>start</b> and <b>end</b> tag, with content in the middle. It is a code sandwich. <br>
+              Elements can be nested. In fact, they always are.
+            </p>
+          </div>
+        </div>
+        <div id="lesson-1-3" class="concept">
+          <h3 class="concept-title">The Cloud</h3>
+          <div class="concept-descr">
+              <div class="thumbnail">
+                <img src="http://dotfiles.tnetconsulting.net/blog/2015/0228/there-is-no-cloud/thereisnocloud-v2.png" alt="There is no cloud.">
+              </div>
+          </div>
+        </div>
+    </div>
+<!-- section break -->
+    <div id="lesson-2" class="lesson">
+      <h2 class="lesson-title">Lesson 2</h2>
+        <div id="lesson-2-1" class="concept">
+          <h3 class="concept-title">HTML, CSS, and DOM</h3>
+          <div class="concept-descr">
+            <ul>
+              <li>HTML - HyperText Markup Language</li>
+              <li>CSS - Cascading Style Sheet</li>
+              <li>DOM - Document Object Model</li>
+            </ul>
+            <p>
+              HTML describes the structure of the webpage, while CSS describes how the structure is styled.<br>
+              DOM is simply the tree of objects that make up the HTML code.
+            </p>
+          </div>
+        </div>
+        <div id="lesson-2-2" class="concept">
+          <h3 class="concept-title">Breaking Down Code Spacially</h3>
+          <div class="concept-descr">
+            <p>
+              Breaking down a page by boxes and grids is a great way to structure your code. It's also a great way to understand how to usde the <span class="tag">div</span> tag.<br>
+              Organize a section of relevant content inside a <span class="tag">div</span> tag, and organize subsections within which the <span class="tag">div</span> tag can be nested.<br>
+              The <span class="tag">div</span> tag will be used not only to keep concepts clearly separated, but also to apply styling to specific sections of code.
+            </p>
+          </div>
+        </div>
+    </div>
+<!-- section break -->
+    <div id="lesson-3" class="lesson">
+      <h2 class="lesson-title">Lesson 3</h2>
+        <div id="lesson-3-1" class="concept">
+          <h3 class="concept-title">CSS and Me</h3>
+          <div class="concept-descr">
+            <p>
+              Working with CSS is an exercise in avoiding repetition and keeping your code clean.<br>
+              Keeping your CSS code in a separate CSS file instead of nested within the <span class="tag">head</span>
+            </p>
+          </div>
+        </div>
+        <div id="lesson-3-2" class="concept">
+          <h3 class="concept-title">Span vs. Div</h3>
+          <div class="concept-descr">
+            <p>
+              The <span class="tag">span</span> and <span class="tag">div</span> tags serve a similar purpose: they are both used to cordon off a section of the text so you can add styling to it.<br>
+              The difference between the two is that <span class="tag">span</span> is an <strong>inline</strong> element and <span class="tag">div</span> is a <strong>block</strong> element.<br>
+              Inline elements are able to be manipulated within the structure of a flowing text. For example if I wanted to make a specific word in the paragrah a different color, <span class="tag">span</span> allows me to localize all styling to as few characters as I want.<br>
+              Block elements cordoned off using <span class="tag">div</span> allows entire sections (and sections within sections) to be styled together.
+            </p>
+          </div>
+        </div>
+    </div>
+<!-- section break -->
+    <div id="misc" class="lesson">
+      <h2 class="lesson-title">Misc: Helpful Things to Know</h2>
+        <div id="misc-1" class="concept">
+          <h3 class="concept-title">How to escape HTML</h3>
+          <div class="concept-descr">
+            <p>
+              If you're taking notes in HTML, inevitably you'll want to take down a useful tag.<br>
+              In order to display the code as it is typed, you simply replace <span class="tag">&lt;</span> with <span class="tag">&amplt;</span> and <span class="tag">&gt;</span> with <span class="tag">&ampgt;</span>.
+            </p>
+            <p>
+              The top comment on <a href="https://stackoverflow.com/questions/8571257/how-to-display-html-tags-as-text">this</a> question posted over at Stack Overflow provides a concise answer.
+            </p>
+          </div>
+        </div>
+        <div id="misc-2" class="concept">
+          <h3 class="concept-title">Comments</h3>
+          <div class="concept-descr">
+            <p>
+              Inputing <span style="color:blue">&lt;!-- comment --&gt;</span> in your html file will insert a comment, which will not display when you render it.<br>
+              The equivalent in CSS is <span style="color:blue;">/* comment */</span>.<br>
+              I could be making a joke about you behind your back and you wouldn't even know it. Unless you looked at the code.
+            </p>
+          </div>
+        </div>
+        <div id="misc-3" class="concept">
+          <h3 class="concept-title">#id vs .class</h3>
+          <div class="concept-descr">
+            <p>
+              There is a helpful descrussion about the difference between <b>id</b> and <b>class</b> <a href="https://stackoverflow.com/questions/12889362/difference-between-id-and-class-in-css-and-when-to-use-it">here</a>.
+            </p>
+          </div>
+        </div>
+        <div id="misc-4" class="concept">
+          <h3 class="concept-title">The greatest resource available to a programmer</h3>
+          <div class="concept-descr">
+            <p>
+              <a href="https://encrypted.google.com">Google</a>
+            </p>
+            <p>
+              It is an <em>enabler</em> of <b>lazy memory</b>.
+            </p>
+          </div>
+        </div>
+<!-- Section -->
+        <div id="variables" class="lesson">
+          <h2 class="lesson-title">Variables and Strings</h2>
+          <div id="variables-1" class="concept">
+            <h3 class="concept-title">Variables</h3>
+            <div class="concept-descr">
+              <p>
+                <ol>
+                  <li>What is a <b>variable</b> ?</li>
+                  <li>What does it mean to <b>assign</b> a value to a variable?</li>
+                  <li>
+                    What is the difference between what the equals <span class="tag">=</span>
+                    means in math versus in programming? Whats the difference between this:
+                    <span class="tag">2 + 3 = 5</span> and this: <span class="tag">my_variable = 5</span> ?
+                  </li>
+                </ol>
+              </p>
+              <p>
+                <ol>
+                  <li>Variabe is what you define it to be.</li>
+                  <li>Assign means to define a variable.</li>
+                  <li><span class="tag">=</span> means assignment.</li>
+                </ol>
+              </p>
+            </div>
+            <div id="variables-2" class="concept">
+              <h3 class="concept-title">Strings</h3>
+                <p>
+                  A string is a series of characters opened and closed by
+                  <span class="tag">""</span> or <span class="tag">''</span> .
+                </p>
+            </div>
+            <div id="variables-3" class="concept">
+              <h3 class="concept-title">Indexing Strings</h3>
+              <p>
+                <span class="tag">string[expression]</span>
+              </p>
+            </div>
+            <div id="variables-4" class="concept">
+              <h3 class=concept-title>Subsequences</h3>
+              <p>
+                <string>[<expression>:<expression>]
+                  Stop up to but not including stop expression.
+              </p>
+            </div>
+            <div id="variables-5" class="concept">
+              <h3 class="concept-title">Find</h3>
+              <p>
+                string.find('search')
+
+              </p>
+            </div>
+            <div class="concept" id="variables-6">
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+        </div>
+    </div>
+  </body>
+</html>
